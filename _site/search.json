@@ -1,0 +1,97 @@
+[
+
+  
+    {
+      "title"			: "Simple Secrets Management via the AWS EC2 Parameter Store",
+      "link"			: "/articles/aws-ec2-secrets/",
+      "excerpt"		: "Amazon’s EC2 Systems Manager was launched at re:Invent 2016. It brings with it a lot of very useful tools meant to ease the administration and management of your EC2 instances and associated resources."
+    }
+  
+
+  
+    ,{
+      "title"			: "AWS re:Invent - 2016 Recap",
+      "link"			: "/blog/2016-aws-reinvent-recap/",
+      "excerpt"		: "This past week I had the opportunity to attend AWS’ 2016 re:Invent conference for the first time."
+    }
+  
+
+  
+    ,{
+      "title"			: "AWS Routing 101",
+      "link"			: "/articles/aws-routing-101/",
+      "excerpt"		: "A walkthrough of routing on AWS."
+    }
+  
+
+  
+    ,{
+      "title"			: "Twenty-Five - 24 Things I Did At 24",
+      "link"			: "/blog/twenty-five/",
+      "excerpt"		: "As I reflect on the last year of my life, I realize I’ve done so many things!"
+    }
+  
+
+  
+    ,{
+      "title"			: "Tips for the New Metra Rider",
+      "link"			: "/blog/metra-in-chicago/",
+      "excerpt"		: "Recently, I made the jump from a job in the suburbs of Chicago, to something a little more suited to my long-term career goals"
+    }
+  
+
+
+
+  
+
+  
+
+  
+    ,{
+      "title"			: "Impossible List",
+      "link"			: "/impossible-list/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+    ,{
+      "title"			: "About Me",
+      "link"			: "/about/",
+      "excerpt"		: "About Matt"
+    }
+  
+
+  
+    ,{
+      "title"			: "Photography",
+      "link"			: "/photography/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+    ,{
+      "title"			: "Stuff I Use",
+      "link"			: "/stuff-i-use/",
+      "excerpt"		: ""
+    }
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+  
+
+]
