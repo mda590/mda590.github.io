@@ -2,7 +2,7 @@
 layout: post
 title: "Simple Secrets Management via the AWS EC2 Parameter Store"
 excerpt: "Amazon’s EC2 Systems Manager was launched at re:Invent 2016. It brings with it a lot of very useful tools meant to ease the administration and management of your EC2 instances and associated resources."
-categories: articles
+categories: blog
 tags: [aws, tutorial]
 comments: false
 share: true
