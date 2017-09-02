@@ -6,14 +6,14 @@
 <head>
 <meta charset="utf-8">
 <script type="text/javascript" src="https://matt.adorjan.co/assets/js/plugins/instafeed.min.js"></script>
-<title>Photography &#8211; Matt Adorjan</title>
-
-
+<title>Hybrid DNS for the Enterprise in AWS &#8211; Matt Adorjan</title>
+<meta name="description" content="Learnings and challenges from extending a hybrid DNS solution from an existing enterprise DNS environment into AWS.">
+<meta name="keywords" content="aws, tutorial">
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Photography">
-
+<meta name="twitter:title" content="Hybrid DNS for the Enterprise in AWS">
+<meta name="twitter:description" content="Learnings and challenges from extending a hybrid DNS solution from an existing enterprise DNS environment into AWS.">
 <meta name="twitter:site" content="@mda590">
 <meta name="twitter:creator" content="@mda590">
 
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Photography">
-
-<meta property="og:url" content="https://matt.adorjan.co/photography/">
+<meta property="og:title" content="Hybrid DNS for the Enterprise in AWS">
+<meta property="og:description" content="Learnings and challenges from extending a hybrid DNS solution from an existing enterprise DNS environment into AWS.">
+<meta property="og:url" content="https://matt.adorjan.co/blog/aws-hybrid-dns/">
 <meta property="og:site_name" content="Matt Adorjan">
 
 
 
 
 
-<link rel="canonical" href="https://matt.adorjan.co/photography/">
+<link rel="canonical" href="https://matt.adorjan.co/blog/aws-hybrid-dns/">
 <link href="https://matt.adorjan.co/feed.xml" type="application/atom+xml" rel="alternate" title="Matt Adorjan Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -77,7 +77,7 @@
 
 </head>
 
-<body id="page">
+<body id="post">
 
 <div class="navigation-wrapper">
 	<nav role="navigation" id="site-nav" class="animated drop">
@@ -115,24 +115,52 @@
 
 
 <div id="main" role="main">
-  <article class="entry">
+  <article class="hentry">
     
     <div class="entry-wrapper">
       <header class="entry-header">
-        <h1 class="entry-title">Photography</h1>
+        <ul class="entry-tags">
+          <li><a href="https://matt.adorjan.co/tags/#aws" title="Pages tagged aws">aws</a></li><li><a href="https://matt.adorjan.co/tags/#tutorial" title="Pages tagged tutorial">tutorial</a></li>
+        </ul>
+        
+          <h1 class="entry-title">Hybrid DNS for the Enterprise in AWS</h1>
+        
       </header>
+      <footer class="entry-meta">
+        
+        
+          <img src="https://matt.adorjan.co/images/me_2016.jpg" class="bio-photo" alt="Matt Adorjan bio photo"></a>
+        
+        <span class="author vcard">By <span class="fn">Matt Adorjan</span></span>
+        <span class="entry-date date published"><time datetime="2017-04-16T00:00:00-05:00"><i class="fa fa-calendar-o"></i> April 16, 2017</time></span>
+        
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=aws,tutorial&amp;text=Hybrid%20DNS%20for%20the%20Enterprise%20in%20AWS&amp;url=https://matt.adorjan.co/blog/aws-hybrid-dns/&amp;via=mda590" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://matt.adorjan.co/blog/aws-hybrid-dns/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=https://matt.adorjan.co/blog/aws-hybrid-dns/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
+        
+      </footer>
       <div class="entry-content">
-        <p>My photos are posted in multiple locations. I use Flickr to post most of the my city and architecture photography. On Instagram, I post a subset of those, and on Exposure, I create photo-stories.</p>
+        <p>AWS’ DNS offering, Route 53, is a great option for managing the basics of name resolution when resources exist solely within the AWS ecosystem. Route 53 integrates with most all of AWS’ services, offers great alias record functionality, and is easy to automate. However, for enterprises looking to make the move to AWS, especially in a hybrid deployment, Route 53 will most likely not be enough to provide all of the name resolution capabilities required. Because of this, hybrid DNS solutions need to be explored and implemented.</p>
+<p>Through the rest of this post, I’ll explain some of the key areas to consider when planning your internal DNS strategy for moving to the cloud, as well as some learnings and challenges from previous DNS projects I’ve encountered. This post will focus on internal, private DNS zones.</p>
 
-<p><strong>Instagram</strong>
-<a href="https://www.instagram.com/mda590" title="Instagram">Click here to view my Instagram!</a></p>
+<p><a href="https://medium.com/@mda590/hybrid-dns-for-the-enterprise-in-aws-5ba5a049bcb1" title="Hybrid DNS for the Enterprise in AWS" target="_blank">Click here to read more!</a></p>
 
-<p><strong>Photo Stories: Exposure</strong></p>
-<iframe src="https://mda590.exposure.co/?embed=true" style="width:100%;height:550px;margin-bottom:5px;border:solid 1px #ccc;border-radius:2px;"></iframe>
-<p><br />Created with <a href="https://exposure.co" style="text-transform:uppercase">Exposure</a></p>
-
+        
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
+    <nav class="pagination" role="navigation">
+      
+        <a href="https://matt.adorjan.co/blog/aws-ec2-secrets/" class="btn" title="Simple Secrets Management via the AWS EC2 Parameter Store">Previous</a>
+      
+      
+    </nav><!-- /.pagination -->
   </article>
 </div><!-- /#main -->
 
