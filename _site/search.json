@@ -63,26 +63,6 @@
   
 
   
-
-  
-
-  
-    ,{
-      "title"			: "Impossible List",
-      "link"			: "https://matt.adorjan.co/impossible-list/",
-      "excerpt"		: ""
-    }
-  
-
-  
-    ,{
-      "title"			: "Stuff I Use",
-      "link"			: "https://matt.adorjan.co/stuff-i-use/",
-      "excerpt"		: ""
-    }
-  
-
-  
     ,{
       "title"			: "About Me",
       "link"			: "https://matt.adorjan.co/about/",
@@ -96,10 +76,30 @@
 
   
     ,{
+      "title"			: "Impossible List",
+      "link"			: "https://matt.adorjan.co/impossible-list/",
+      "excerpt"		: ""
+    }
+  
+
+  
+    ,{
       "title"			: "Photography",
       "link"			: "https://matt.adorjan.co/photography/",
       "excerpt"		: ""
     }
+  
+
+  
+
+  
+    ,{
+      "title"			: "Stuff I Use",
+      "link"			: "https://matt.adorjan.co/stuff-i-use/",
+      "excerpt"		: ""
+    }
+  
+
   
 
   
