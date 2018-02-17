@@ -3,7 +3,7 @@
   
     {
       "title"			: "AWS Cloud9: First Look from an Ops Perspective",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/blog/cloud9-infra-ops/",
+      "link"			: "https://matt.adorjan.co/blog/cloud9-infra-ops/",
       "excerpt"		: "Here are some of my thoughts and findings on AWS’ Cloud9 that are more relevant from an infrastructure operations perspective. I know developers will be eager to get their hands on this product in the enterprise!"
     }
   
@@ -11,7 +11,7 @@
   
     ,{
       "title"			: "Hybrid DNS for the Enterprise in AWS",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/blog/aws-hybrid-dns/",
+      "link"			: "https://matt.adorjan.co/blog/aws-hybrid-dns/",
       "excerpt"		: "Learnings and challenges from extending a hybrid DNS solution from an existing enterprise DNS environment into AWS."
     }
   
@@ -19,7 +19,7 @@
   
     ,{
       "title"			: "Simple Secrets Management via the AWS EC2 Parameter Store",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/blog/aws-ec2-secrets/",
+      "link"			: "https://matt.adorjan.co/blog/aws-ec2-secrets/",
       "excerpt"		: "Amazon’s EC2 Systems Manager was launched at re:Invent 2016. It brings with it a lot of very useful tools meant to ease the administration and management of your EC2 instances and associated resources."
     }
   
@@ -27,7 +27,7 @@
   
     ,{
       "title"			: "AWS re:Invent - 2016 Recap",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/blog/2016-aws-reinvent-recap/",
+      "link"			: "https://matt.adorjan.co/blog/2016-aws-reinvent-recap/",
       "excerpt"		: "This past week I had the opportunity to attend AWS’ 2016 re:Invent conference for the first time."
     }
   
@@ -35,7 +35,7 @@
   
     ,{
       "title"			: "AWS Routing 101",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/blog/aws-routing-101/",
+      "link"			: "https://matt.adorjan.co/blog/aws-routing-101/",
       "excerpt"		: "A walkthrough of routing on AWS."
     }
   
@@ -43,7 +43,7 @@
   
     ,{
       "title"			: "Twenty-Five - 24 Things I Did At 24",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/blog/twenty-five/",
+      "link"			: "https://matt.adorjan.co/blog/twenty-five/",
       "excerpt"		: "As I reflect on the last year of my life, I realize I’ve done so many things!"
     }
   
@@ -51,7 +51,7 @@
   
     ,{
       "title"			: "Tips for the New Metra Rider",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/blog/metra-in-chicago/",
+      "link"			: "https://matt.adorjan.co/blog/metra-in-chicago/",
       "excerpt"		: "Recently, I made the jump from a job in the suburbs of Chicago, to something a little more suited to my long-term career goals"
     }
   
@@ -69,7 +69,7 @@
   
     ,{
       "title"			: "Impossible List",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/impossible-list/",
+      "link"			: "https://matt.adorjan.co/impossible-list/",
       "excerpt"		: ""
     }
   
@@ -77,7 +77,7 @@
   
     ,{
       "title"			: "Stuff I Use",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/stuff-i-use/",
+      "link"			: "https://matt.adorjan.co/stuff-i-use/",
       "excerpt"		: ""
     }
   
@@ -85,7 +85,7 @@
   
     ,{
       "title"			: "About Me",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/about/",
+      "link"			: "https://matt.adorjan.co/about/",
       "excerpt"		: "About Matt"
     }
   
@@ -97,7 +97,7 @@
   
     ,{
       "title"			: "Photography",
-      "link"			: "http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/photography/",
+      "link"			: "https://matt.adorjan.co/photography/",
       "excerpt"		: ""
     }
   

@@ -1,1 +1,1 @@
-Sitemap: http://ec2-18-221-203-212.us-east-2.compute.amazonaws.com:8080/sitemap.xml
+Sitemap: https://matt.adorjan.co/sitemap.xml

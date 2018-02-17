@@ -6,14 +6,14 @@
 <head>
 <meta charset="utf-8">
 <script type="text/javascript" src="https://matt.adorjan.co/assets/js/plugins/instafeed.min.js"></script>
-<title>AWS re:Invent - 2016 Recap &#8211; Matt Adorjan</title>
-<meta name="description" content="This past week I had the opportunity to attend AWS’ 2016 re:Invent conference for the first time.">
-<meta name="keywords" content="">
+<title>AWS Cloud9: First Look from an Ops Perspective &#8211; Matt Adorjan</title>
+<meta name="description" content="Here are some of my thoughts and findings on AWS' Cloud9 that are more relevant from an infrastructure operations perspective. I know developers will be eager to get their hands on this product in the enterprise!">
+<meta name="keywords" content="aws, tutorial">
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="AWS re:Invent - 2016 Recap">
-<meta name="twitter:description" content="This past week I had the opportunity to attend AWS’ 2016 re:Invent conference for the first time.">
+<meta name="twitter:title" content="AWS Cloud9: First Look from an Ops Perspective">
+<meta name="twitter:description" content="Here are some of my thoughts and findings on AWS' Cloud9 that are more relevant from an infrastructure operations perspective. I know developers will be eager to get their hands on this product in the enterprise!">
 <meta name="twitter:site" content="@mda590">
 <meta name="twitter:creator" content="@mda590">
 
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="AWS re:Invent - 2016 Recap">
-<meta property="og:description" content="This past week I had the opportunity to attend AWS’ 2016 re:Invent conference for the first time.">
-<meta property="og:url" content="https://matt.adorjan.co/blog/2016-aws-reinvent-recap/">
+<meta property="og:title" content="AWS Cloud9: First Look from an Ops Perspective">
+<meta property="og:description" content="Here are some of my thoughts and findings on AWS' Cloud9 that are more relevant from an infrastructure operations perspective. I know developers will be eager to get their hands on this product in the enterprise!">
+<meta property="og:url" content="https://matt.adorjan.co/blog/cloud9-infra-ops/">
 <meta property="og:site_name" content="Matt Adorjan">
 
 
 
 
 
-<link rel="canonical" href="https://matt.adorjan.co/blog/2016-aws-reinvent-recap/">
+<link rel="canonical" href="https://matt.adorjan.co/blog/cloud9-infra-ops/">
 <link href="https://matt.adorjan.co/feed.xml" type="application/atom+xml" rel="alternate" title="Matt Adorjan Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -120,10 +120,10 @@
     <div class="entry-wrapper">
       <header class="entry-header">
         <ul class="entry-tags">
-          
+          <li><a href="https://matt.adorjan.co/tags/#aws" title="Pages tagged aws">aws</a></li><li><a href="https://matt.adorjan.co/tags/#tutorial" title="Pages tagged tutorial">tutorial</a></li>
         </ul>
         
-          <h1 class="entry-title">AWS re:Invent - 2016 Recap</h1>
+          <h1 class="entry-title">AWS Cloud9: First Look from an Ops Perspective</h1>
         
       </header>
       <footer class="entry-meta">
@@ -132,25 +132,34 @@
           <img src="https://matt.adorjan.co/images/me_2016.jpg" class="bio-photo" alt="Matt Adorjan bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Matt Adorjan</span></span>
-        <span class="entry-date date published"><time datetime="2016-12-04T15:27:31+00:00"><i class="fa fa-calendar-o"></i> December 04, 2016</time></span>
+        <span class="entry-date date published"><time datetime="2017-12-02T00:00:00+00:00"><i class="fa fa-calendar-o"></i> December 02, 2017</time></span>
         
-        
+        <span class="social-share-twitter">
+  <a href="https://twitter.com/intent/tweet?hashtags=aws,tutorial&amp;text=AWS%20Cloud9:%20First%20Look%20from%20an%20Ops%20Perspective&amp;url=https://matt.adorjan.co/blog/cloud9-infra-ops/&amp;via=mda590" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+</span>
+<span class="social-share-facebook">
+  <a href="https://www.facebook.com/sharer/sharer.php?u=https://matt.adorjan.co/blog/cloud9-infra-ops/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+</span>
+<span class="social-share-googleplus">
+  <a href="https://plus.google.com/share?url=https://matt.adorjan.co/blog/cloud9-infra-ops/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+</span>
+<!-- /.social-share -->
         
       </footer>
       <div class="entry-content">
-        <p>This past week I had the opportunity to attend AWS’ 2016 re:Invent conference for the first time. It was awesome! The connections I made and the things I learned will definitely stick with me for a long time to come! This year’s conference had over 30,000 people, and while that probably sounds overwhelming, it was overall run very well.</p>
+        <p>I just spent a couple of hours playing around with AWS’ new Cloud9 product, a fully browser based IDE with a lot of integration into AWS services.</p>
+<p>I’m really impressed with the product overall. I have not ever had the chance to use Cloud9 prior to AWS purchasing it, but I can definitely understand the merits and interest by a lot of developers in a completely cloud-based IDE.</p>
+<p>Here are some of my thoughts and findings that are more relevant from an infrastructure operations perspective. I know developers will be eager to get their hands on this product in the enterprise!</p>
 
-<p><a href="https://medium.com/@mda590/aws-re-invent-2016-recap-338cc518f866#.bxx9tl8m2" title="AWS re:Invent - 2016 Recap" target="_blank">Click here to read more!</a></p>
+<p><a href="https://medium.com/@mda590/aws-cloud9-first-look-from-an-ops-perspective-6967a2e218f9" title="AWS Cloud9: First Look from an Ops Perspective" target="_blank">Click here to read more!</a></p>
 
         
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="https://matt.adorjan.co/blog/aws-routing-101/" class="btn" title="AWS Routing 101">Previous</a>
+        <a href="https://matt.adorjan.co/blog/aws-hybrid-dns/" class="btn" title="Hybrid DNS for the Enterprise in AWS">Previous</a>
       
-      
-        <a href="https://matt.adorjan.co/blog/aws-ec2-secrets/" class="btn" title="Simple Secrets Management via the AWS EC2 Parameter Store">Next</a>
       
     </nav><!-- /.pagination -->
   </article>
