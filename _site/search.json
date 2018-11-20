@@ -2,6 +2,14 @@
 
   
     {
+      "title"			: "Introducing Route 53 Resolver for Hybrid Cloud",
+      "link"			: "https://matt.adorjan.co/blog/aws-hybrid-dns-resolver/",
+      "excerpt"		: "This post will review the functionality introduced in the new Route 53 Resolver for Hybrid Cloud offering, how to use it, and how to transition away from an EC2 based DNS forwarder solution to using only AWS’ new managed Route 53 services."
+    }
+  
+
+  
+    ,{
       "title"			: "AWS Cloud9: First Look from an Ops Perspective",
       "link"			: "https://matt.adorjan.co/blog/cloud9-infra-ops/",
       "excerpt"		: "Here are some of my thoughts and findings on AWS’ Cloud9 that are more relevant from an infrastructure operations perspective. I know developers will be eager to get their hands on this product in the enterprise!"
