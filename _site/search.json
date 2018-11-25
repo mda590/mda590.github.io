@@ -2,8 +2,16 @@
 
   
     {
+      "title"			: "Inside the AWS re:Invent Session Bot",
+      "link"			: "http://localhost:4000/blog/inside-reinvent-bot/",
+      "excerpt"		: "Today, I posted the code which runs the re:Invent Bot session tracking service. At a high level, this service scrapes the re:Invent session catalog at regular intervals, stores session information in a database, and then if sessions are new or changed, a Tweet is sent out with the session information."
+    }
+  
+
+  
+    ,{
       "title"			: "Introducing Route 53 Resolver for Hybrid Cloud",
-      "link"			: "https://matt.adorjan.co/blog/aws-hybrid-dns-resolver/",
+      "link"			: "http://localhost:4000/blog/aws-hybrid-dns-resolver/",
       "excerpt"		: "This post will review the functionality introduced in the new Route 53 Resolver for Hybrid Cloud offering, how to use it, and how to transition away from an EC2 based DNS forwarder solution to using only AWS’ new managed Route 53 services."
     }
   
@@ -11,7 +19,7 @@
   
     ,{
       "title"			: "AWS Cloud9: First Look from an Ops Perspective",
-      "link"			: "https://matt.adorjan.co/blog/cloud9-infra-ops/",
+      "link"			: "http://localhost:4000/blog/cloud9-infra-ops/",
       "excerpt"		: "Here are some of my thoughts and findings on AWS’ Cloud9 that are more relevant from an infrastructure operations perspective. I know developers will be eager to get their hands on this product in the enterprise!"
     }
   
@@ -19,7 +27,7 @@
   
     ,{
       "title"			: "Hybrid DNS for the Enterprise in AWS",
-      "link"			: "https://matt.adorjan.co/blog/aws-hybrid-dns/",
+      "link"			: "http://localhost:4000/blog/aws-hybrid-dns/",
       "excerpt"		: "Learnings and challenges from extending a hybrid DNS solution from an existing enterprise DNS environment into AWS."
     }
   
@@ -27,7 +35,7 @@
   
     ,{
       "title"			: "Simple Secrets Management via the AWS EC2 Parameter Store",
-      "link"			: "https://matt.adorjan.co/blog/aws-ec2-secrets/",
+      "link"			: "http://localhost:4000/blog/aws-ec2-secrets/",
       "excerpt"		: "Amazon’s EC2 Systems Manager was launched at re:Invent 2016. It brings with it a lot of very useful tools meant to ease the administration and management of your EC2 instances and associated resources."
     }
   
@@ -35,7 +43,7 @@
   
     ,{
       "title"			: "AWS re:Invent - 2016 Recap",
-      "link"			: "https://matt.adorjan.co/blog/2016-aws-reinvent-recap/",
+      "link"			: "http://localhost:4000/blog/2016-aws-reinvent-recap/",
       "excerpt"		: "This past week I had the opportunity to attend AWS’ 2016 re:Invent conference for the first time."
     }
   
@@ -43,7 +51,7 @@
   
     ,{
       "title"			: "AWS Routing 101",
-      "link"			: "https://matt.adorjan.co/blog/aws-routing-101/",
+      "link"			: "http://localhost:4000/blog/aws-routing-101/",
       "excerpt"		: "A walkthrough of routing on AWS."
     }
   
@@ -51,7 +59,7 @@
   
     ,{
       "title"			: "Twenty-Five - 24 Things I Did At 24",
-      "link"			: "https://matt.adorjan.co/blog/twenty-five/",
+      "link"			: "http://localhost:4000/blog/twenty-five/",
       "excerpt"		: "As I reflect on the last year of my life, I realize I’ve done so many things!"
     }
   
@@ -59,7 +67,7 @@
   
     ,{
       "title"			: "Tips for the New Metra Rider",
-      "link"			: "https://matt.adorjan.co/blog/metra-in-chicago/",
+      "link"			: "http://localhost:4000/blog/metra-in-chicago/",
       "excerpt"		: "Recently, I made the jump from a job in the suburbs of Chicago, to something a little more suited to my long-term career goals"
     }
   
@@ -73,7 +81,7 @@
   
     ,{
       "title"			: "About Me",
-      "link"			: "https://matt.adorjan.co/about/",
+      "link"			: "http://localhost:4000/about/",
       "excerpt"		: "About Matt"
     }
   
@@ -85,7 +93,7 @@
   
     ,{
       "title"			: "Impossible List",
-      "link"			: "https://matt.adorjan.co/impossible-list/",
+      "link"			: "http://localhost:4000/impossible-list/",
       "excerpt"		: ""
     }
   
@@ -93,7 +101,7 @@
   
     ,{
       "title"			: "Photography",
-      "link"			: "https://matt.adorjan.co/photography/",
+      "link"			: "http://localhost:4000/photography/",
       "excerpt"		: ""
     }
   
@@ -103,7 +111,7 @@
   
     ,{
       "title"			: "Stuff I Use",
-      "link"			: "https://matt.adorjan.co/stuff-i-use/",
+      "link"			: "http://localhost:4000/stuff-i-use/",
       "excerpt"		: ""
     }
   

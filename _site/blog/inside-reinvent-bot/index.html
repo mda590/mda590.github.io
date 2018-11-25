@@ -6,14 +6,14 @@
 <head>
 <meta charset="utf-8">
 <script type="text/javascript" src="http://localhost:4000/assets/js/plugins/instafeed.min.js"></script>
-<title>Introducing Route 53 Resolver for Hybrid Cloud &#8211; Matt Adorjan</title>
-<meta name="description" content="This post will review the functionality introduced in the new Route 53 Resolver for Hybrid Cloud offering, how to use it, and how to transition away from an EC2 based DNS forwarder solution to using only AWS' new managed Route 53 services.">
-<meta name="keywords" content="aws, tutorial">
+<title>Inside the AWS re:Invent Session Bot &#8211; Matt Adorjan</title>
+<meta name="description" content="Today, I posted the code which runs the re:Invent Bot session tracking service. At a high level, this service scrapes the re:Invent session catalog at regular intervals, stores session information in a database, and then if sessions are new or changed, a Tweet is sent out with the session information.">
+<meta name="keywords" content="aws, architecture">
 
 
 <!-- Twitter Cards -->
-<meta name="twitter:title" content="Introducing Route 53 Resolver for Hybrid Cloud">
-<meta name="twitter:description" content="This post will review the functionality introduced in the new Route 53 Resolver for Hybrid Cloud offering, how to use it, and how to transition away from an EC2 based DNS forwarder solution to using only AWS' new managed Route 53 services.">
+<meta name="twitter:title" content="Inside the AWS re:Invent Session Bot">
+<meta name="twitter:description" content="Today, I posted the code which runs the re:Invent Bot session tracking service. At a high level, this service scrapes the re:Invent session catalog at regular intervals, stores session information in a database, and then if sessions are new or changed, a Tweet is sent out with the session information.">
 <meta name="twitter:site" content="@mda590">
 <meta name="twitter:creator" content="@mda590">
 
@@ -23,16 +23,16 @@
 <!-- Open Graph -->
 <meta property="og:locale" content="en_US">
 <meta property="og:type" content="article">
-<meta property="og:title" content="Introducing Route 53 Resolver for Hybrid Cloud">
-<meta property="og:description" content="This post will review the functionality introduced in the new Route 53 Resolver for Hybrid Cloud offering, how to use it, and how to transition away from an EC2 based DNS forwarder solution to using only AWS' new managed Route 53 services.">
-<meta property="og:url" content="http://localhost:4000/blog/aws-hybrid-dns-resolver/">
+<meta property="og:title" content="Inside the AWS re:Invent Session Bot">
+<meta property="og:description" content="Today, I posted the code which runs the re:Invent Bot session tracking service. At a high level, this service scrapes the re:Invent session catalog at regular intervals, stores session information in a database, and then if sessions are new or changed, a Tweet is sent out with the session information.">
+<meta property="og:url" content="http://localhost:4000/blog/inside-reinvent-bot/">
 <meta property="og:site_name" content="Matt Adorjan">
 
 
 
 
 
-<link rel="canonical" href="http://localhost:4000/blog/aws-hybrid-dns-resolver/">
+<link rel="canonical" href="http://localhost:4000/blog/inside-reinvent-bot/">
 <link href="http://localhost:4000/feed.xml" type="application/atom+xml" rel="alternate" title="Matt Adorjan Feed">
 
 <!-- https://t.co/dKP3o1e -->
@@ -120,10 +120,10 @@
     <div class="entry-wrapper">
       <header class="entry-header">
         <ul class="entry-tags">
-          <li><a href="http://localhost:4000/tags/#aws" title="Pages tagged aws">aws</a></li><li><a href="http://localhost:4000/tags/#tutorial" title="Pages tagged tutorial">tutorial</a></li>
+          <li><a href="http://localhost:4000/tags/#aws" title="Pages tagged aws">aws</a></li><li><a href="http://localhost:4000/tags/#architecture" title="Pages tagged architecture">architecture</a></li>
         </ul>
         
-          <h1 class="entry-title">Introducing Route 53 Resolver for Hybrid Cloud</h1>
+          <h1 class="entry-title">Inside the AWS re:Invent Session Bot</h1>
         
       </header>
       <footer class="entry-meta">
@@ -132,37 +132,33 @@
           <img src="http://localhost:4000/images/me_2016.jpg" class="bio-photo" alt="Matt Adorjan bio photo"></a>
         
         <span class="author vcard">By <span class="fn">Matt Adorjan</span></span>
-        <span class="entry-date date published"><time datetime="2018-11-19T00:00:00-06:00"><i class="fa fa-calendar-o"></i> November 19, 2018</time></span>
+        <span class="entry-date date published"><time datetime="2018-11-23T00:00:00-06:00"><i class="fa fa-calendar-o"></i> November 23, 2018</time></span>
         
         <span class="social-share-twitter">
-  <a href="https://twitter.com/intent/tweet?hashtags=aws,tutorial&amp;text=Introducing%20Route%2053%20Resolver%20for%20Hybrid%20Cloud&amp;url=http://localhost:4000/blog/aws-hybrid-dns-resolver/&amp;via=mda590" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
+  <a href="https://twitter.com/intent/tweet?hashtags=aws,architecture&amp;text=Inside%20the%20AWS%20re:Invent%20Session%20Bot&amp;url=http://localhost:4000/blog/inside-reinvent-bot/&amp;via=mda590" title="Share on Twitter" itemprop="Twitter"><i class="fa fa-twitter-square"></i> Tweet</a>
 </span>
 <span class="social-share-facebook">
-  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/aws-hybrid-dns-resolver/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
+  <a href="https://www.facebook.com/sharer/sharer.php?u=http://localhost:4000/blog/inside-reinvent-bot/" title="Share on Facebook" itemprop="Facebook"><i class="fa fa-facebook-square"></i> Like</a>
 </span>
 <span class="social-share-googleplus">
-  <a href="https://plus.google.com/share?url=http://localhost:4000/blog/aws-hybrid-dns-resolver/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
+  <a href="https://plus.google.com/share?url=http://localhost:4000/blog/inside-reinvent-bot/" title="Share on Google Plus" itemprop="GooglePlus"><i class="fa fa-google-plus-square"></i> +1</a>
 </span>
 <!-- /.social-share -->
         
       </footer>
       <div class="entry-content">
-        <p>Early last year, <a href="https://medium.com/statuscode/hybrid-dns-for-the-enterprise-in-aws-5ba5a049bcb1">I published an article</a> outlining the different options available for creating an enterprise-tailored hybrid DNS solution on AWS. This solution required EC2 instances, configuring DNS software, and a good amount of "undifferentiated heavy lifting."</p>
-<p>As AWS has matured their enterprise offerings over the past several years, they've identified hybrid DNS as a gap and I was so happy to hear they've solved this problem by announcing the 'Route 53 Resolver for Hybrid Cloud' service today!</p>
-<p>The new Route 53 resolver offering is broken down into two different offerings - an "inbound endpoint" and an "outbound endpoint". When used together, an enterprise has all of the pieces required to turn an existing DNS configuration into a hybrid configuration, bridging both the datacenter and AWS.</p>
-<p>This post will review the functionality introduced in the new Route 53 Resolver for Hybrid Cloud offering, how to use it, and how to transition away from an EC2 based DNS forwarder solution to using only AWS' new managed Route 53 services!</p>
+        <p>Today, I posted the code which runs the re:Invent Bot session tracking service. At a high level, this service scrapes the re:Invent session catalog at regular intervals, stores session information in a database, and then if sessions are new or changed, a Tweet is sent out with the session information.</p>
+<p>The goal of this post is to provide an inside look at the re:Invent Bot and share some of the AWS architecture which powers it.</p>
 
-<p><a href="https://medium.com/@mda590/an-update-to-hybrid-dns-for-the-enterprise-on-aws-introducing-route-53-resolver-for-hybrid-cloud-74e55d4e67a2" title="An Update to Hybrid DNS for the Enterprise on AWS - Introducing Route 53 Resolver for Hybrid Cloud!" target="_blank">Click here to read more!</a></p>
+<p><a href="https://medium.com/@mda590/inside-the-aws-re-invent-session-bot-c353830e2104" title="Inside the AWS re:Invent Session Bot" target="_blank">Click here to read more!</a></p>
 
         
       </div><!-- /.entry-content -->
     </div><!-- /.entry-wrapper -->
     <nav class="pagination" role="navigation">
       
-        <a href="http://localhost:4000/blog/cloud9-infra-ops/" class="btn" title="AWS Cloud9: First Look from an Ops Perspective">Previous</a>
+        <a href="http://localhost:4000/blog/aws-hybrid-dns-resolver/" class="btn" title="Introducing Route 53 Resolver for Hybrid Cloud">Previous</a>
       
-      
-        <a href="http://localhost:4000/blog/inside-reinvent-bot/" class="btn" title="Inside the AWS re:Invent Session Bot">Next</a>
       
     </nav><!-- /.pagination -->
   </article>
