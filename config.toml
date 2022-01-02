@@ -1,0 +1,71 @@
+baseURL = 'http://example.org/'
+languageCode = 'en-us'
+title = "Matt Adorjan"
+theme = "loveit"
+
+[params]
+  # LoveIt theme version
+  version = "0.2.X"
+
+  [params.search]
+    enable = true
+
+  [params.footer]
+    hugo = false
+
+  [params.home]
+    [params.home.profile]
+      gravatarEmail = "matt.adorjan@gmail.com"
+      title = "Hey there, I'm Matt! 👋"
+      subtitle = 'I am a cloud architect obsessed with all things tech. I love coffee and photography. I created cloudping.co.'
+      social = true
+    [params.home.posts]
+      enable = true
+      paginate = 4
+
+  [params.social]
+    Twitter = "mda590"
+    GitHub = "mda590"
+    LinkedIn = "mattadorjan"
+    Instagram = "mda590"
+    Medium = "mda590"
+    Devto = "mattadorjan"
+    Email = "matt@ma.dev"
+    Flickr = "mattadorjan"
+
+[menu]
+  [[menu.main]]
+    identifier = "about"
+    pre = ""
+    post = ""
+    name = "About Me"
+    url = "/about/"
+    title = ""
+    weight = 1
+  [[menu.main]]
+    identifier = "posts"
+    # you can add extra information before the name (HTML format is supported), such as icons
+    pre = ""
+    # you can add extra information after the name (HTML format is supported), such as icons
+    post = ""
+    name = "Posts"
+    url = "/posts/"
+    # title will be shown when you hover on this menu link
+    title = ""
+    weight = 2
+  [[menu.main]]
+    identifier = "tags"
+    pre = ""
+    post = ""
+    name = "Tags"
+    url = "/tags/"
+    title = ""
+    weight = 3
+  [[menu.main]]
+    identifier = "photography"
+    pre = ""
+    post = ""
+    name = "Photography"
+    url = "/photography/"
+    title = ""
+    weight = 4
