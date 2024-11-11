@@ -1,147 +1,17 @@
-<!doctype html><html lang=en-us>
-<head>
-<meta charset=utf-8>
-<meta name=viewport content="width=device-width,initial-scale=1">
-<meta name=robots content="noodp">
-<meta http-equiv=x-ua-compatible content="IE=edge, chrome=1">
-<title>AWS Routing 101 - Matt Adorjan</title><meta name=Description content><meta property="og:title" content="AWS Routing 101">
-<meta property="og:description" content="Introduction AWS makes routing simple by abstracting the complex configuration required when configuring hardware routers, and only requiring users of the platform to manage simple routing tables with a few fields. AWS’ underlying infrastructure handles the rest. That being said, there are still several different options for routing which need to be considered and then configured, based on the size and complexity of your AWS environment.
-This post will cover the following topics:">
-<meta property="og:type" content="article">
-<meta property="og:url" content="http://example.org/posts/2016-10-01-aws-routing-101/"><meta property="article:section" content="posts">
-<meta property="article:published_time" content="2015-05-19T00:00:00-05:00">
-<meta property="article:modified_time" content="2015-05-19T00:00:00-05:00">
-<meta name=twitter:card content="summary">
-<meta name=twitter:title content="AWS Routing 101">
-<meta name=twitter:description content="Introduction AWS makes routing simple by abstracting the complex configuration required when configuring hardware routers, and only requiring users of the platform to manage simple routing tables with a few fields. AWS’ underlying infrastructure handles the rest. That being said, there are still several different options for routing which need to be considered and then configured, based on the size and complexity of your AWS environment.
-This post will cover the following topics:">
-<meta name=application-name content="Matt Adorjan">
-<meta name=apple-mobile-web-app-title content="Matt Adorjan"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico>
-<link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png>
-<link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.org/posts/2016-10-01-aws-routing-101/><link rel=prev href=http://example.org/posts/2015-05-19-twenty-five/><link rel=next href=http://example.org/posts/2016-12-04-2016-aws-reinvent-recap/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"AWS Routing 101","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.org\/posts\/2016-10-01-aws-routing-101\/"},"genre":"posts","keywords":"aws, tutorial","wordcount":109,"url":"http:\/\/example.org\/posts\/2016-10-01-aws-routing-101\/","datePublished":"2015-05-19T00:00:00-05:00","dateModified":"2015-05-19T00:00:00-05:00","publisher":{"@type":"Organization","name":"Matt Adorjan"},"author":{"@type":"Person","name":"Matt Adorjan"},"description":""}</script></head>
-<body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem('theme')?localStorage.getItem('theme')==='dark':''==='auto'?window.matchMedia('(prefers-color-scheme: dark)').matches:''==='dark')&&document.body.setAttribute('theme','dark')</script>
-<div id=mask></div><div class=wrapper><header class=desktop id=header-desktop>
-<div class=header-wrapper>
-<div class=header-title>
-<a href=/ title="Matt Adorjan">Matt Adorjan</a>
-</div>
-<div class=menu>
-<div class=menu-inner><a class=menu-item href=/about/> About Me </a><a class=menu-item href=/posts/> Posts </a><a class=menu-item href=/tags/> Tags </a><a class=menu-item href=/photography/> Photography </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
+<!doctype html><html lang=en-us><head><meta charset=utf-8><meta name=viewport content="width=device-width,initial-scale=1"><meta name=robots content="noodp"><meta http-equiv=X-UA-Compatible content="IE=edge, chrome=1"><title>AWS Routing 101 - Matt Adorjan</title><meta name=Description content><meta property="og:url" content="http://example.org/posts/2016-10-01-aws-routing-101/">
+<meta property="og:site_name" content="Matt Adorjan"><meta property="og:title" content="AWS Routing 101"><meta property="og:description" content="Introduction AWS makes routing simple by abstracting the complex configuration required when configuring hardware routers, and only requiring users of the platform to manage simple routing tables with a few fields. AWS’ underlying infrastructure handles the rest. That being said, there are still several different options for routing which need to be considered and then configured, based on the size and complexity of your AWS environment.
+This post will cover the following topics:"><meta property="og:locale" content="en_us"><meta property="og:type" content="article"><meta property="article:section" content="posts"><meta property="article:published_time" content="2015-05-19T00:00:00-05:00"><meta property="article:modified_time" content="2015-05-19T00:00:00-05:00"><meta property="article:tag" content="Aws"><meta property="article:tag" content="Tutorial"><meta name=twitter:card content="summary"><meta name=twitter:title content="AWS Routing 101"><meta name=twitter:description content="Introduction AWS makes routing simple by abstracting the complex configuration required when configuring hardware routers, and only requiring users of the platform to manage simple routing tables with a few fields. AWS’ underlying infrastructure handles the rest. That being said, there are still several different options for routing which need to be considered and then configured, based on the size and complexity of your AWS environment.
+This post will cover the following topics:"><meta name=twitter:site content="@mda590"><meta name=application-name content="Matt Adorjan"><meta name=apple-mobile-web-app-title content="Matt Adorjan"><link rel="shortcut icon" type=image/x-icon href=/favicon.ico><link rel=icon type=image/png sizes=32x32 href=/favicon-32x32.png><link rel=icon type=image/png sizes=16x16 href=/favicon-16x16.png><link rel=apple-touch-icon sizes=180x180 href=/apple-touch-icon.png><link rel=manifest href=/site.webmanifest><link rel=canonical href=http://example.org/posts/2016-10-01-aws-routing-101/><link rel=prev href=http://example.org/posts/2015-05-19-twenty-five/><link rel=next href=http://example.org/posts/2016-12-04-2016-aws-reinvent-recap/><link rel=stylesheet href=/lib/normalize/normalize.min.css><link rel=stylesheet href=/css/style.min.css><link rel=stylesheet href=/lib/fontawesome-free/all.min.css><link rel=stylesheet href=/lib/animate/animate.min.css><script type=application/ld+json>{"@context":"http://schema.org","@type":"BlogPosting","headline":"AWS Routing 101","inLanguage":"en-us","mainEntityOfPage":{"@type":"WebPage","@id":"http:\/\/example.org\/posts\/2016-10-01-aws-routing-101\/"},"genre":"posts","keywords":"aws, tutorial","wordcount":109,"url":"http:\/\/example.org\/posts\/2016-10-01-aws-routing-101\/","datePublished":"2015-05-19T00:00:00-05:00","dateModified":"2015-05-19T00:00:00-05:00","publisher":{"@type":"Organization","name":"Matt Adorjan"},"author":{"@type":"Person","name":"Matt Adorjan"},"description":""}</script></head><body header-desktop header-mobile><script type=text/javascript>(window.localStorage&&localStorage.getItem("theme")?localStorage.getItem("theme")==="dark":""==="auto"?window.matchMedia("(prefers-color-scheme: dark)").matches:""==="dark")&&document.body.setAttribute("theme","dark")</script><div id=mask></div><div class=wrapper><header class=desktop id=header-desktop><div class=header-wrapper><div class=header-title><a href=/ title="Matt Adorjan">Matt Adorjan</a></div><div class=menu><div class=menu-inner><a class=menu-item href=/about/>About Me </a><a class=menu-item href=/posts/>Posts </a><a class=menu-item href=/tags/>Tags </a><a class=menu-item href=/photography/>Photography </a><span class="menu-item delimiter"></span><span class="menu-item search" id=search-desktop>
 <input type=text placeholder="Search titles or contents..." id=search-input-desktop>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search>
-<i class="fas fa-search fa-fw"></i>
-</a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear>
-<i class="fas fa-times-circle fa-fw"></i>
-</a>
-<span class="search-button search-loading" id=search-loading-desktop>
-<i class="fas fa-spinner fa-fw fa-spin"></i>
-</span>
-</span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
-<i class="fas fa-adjust fa-fw"></i>
-</a>
-</div>
-</div>
-</div>
-</header><header class=mobile id=header-mobile>
-<div class=header-container>
-<div class=header-wrapper>
-<div class=header-title>
-<a href=/ title="Matt Adorjan">Matt Adorjan</a>
-</div>
-<div class=menu-toggle id=menu-toggle-mobile>
-<span></span><span></span><span></span>
-</div>
-</div>
-<div class=menu id=menu-mobile><div class=search-wrapper>
-<div class="search mobile" id=search-mobile>
-<input type=text placeholder="Search titles or contents..." id=search-input-mobile>
-<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search>
-<i class="fas fa-search fa-fw"></i>
-</a>
-<a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear>
-<i class="fas fa-times-circle fa-fw"></i>
-</a>
-<span class="search-button search-loading" id=search-loading-mobile>
-<i class="fas fa-spinner fa-fw fa-spin"></i>
-</span>
-</div>
-<a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>
-Cancel
-</a>
-</div><a class=menu-item href=/about/ title>About Me</a><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/photography/ title>Photography</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
-<i class="fas fa-adjust fa-fw"></i>
-</a></div>
-</div>
-</header>
-<div class="search-dropdown desktop">
-<div id=search-dropdown-desktop></div>
-</div>
-<div class="search-dropdown mobile">
-<div id=search-dropdown-mobile></div>
-</div>
-<main class=main>
-<div class=container><div class=toc id=toc-auto>
-<h2 class=toc-title>Contents</h2>
-<div class=toc-content id=toc-content-auto></div>
-</div><article class="page single"><h1 class="single-title animated flipInX">AWS Routing 101</h1><div class=post-meta>
-<div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Matt Adorjan</a></span></div>
-<div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2015-05-19>2015-05-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;109 words&nbsp;
-<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div>
-</div><div class="details toc" id=toc-static kept>
-<div class="details-summary toc-title">
-<span>Contents</span>
-<span><i class="details-icon fas fa-angle-right"></i></span>
-</div>
-<div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents>
-<ul>
-<li><a href=#introduction>Introduction</a></li>
-</ul>
-</nav></div>
-</div><div class=content id=content><h2 id=introduction>Introduction</h2>
-<p>AWS makes routing simple by abstracting the complex configuration required when configuring hardware routers, and only requiring users of the platform to manage simple routing tables with a few fields. AWS’ underlying infrastructure handles the rest. That being said, there are still several different options for routing which need to be considered and then configured, based on the size and complexity of your AWS environment.</p>
-<p>This post will cover the following topics:</p>
-<ul>
-<li>Route Table Basics</li>
-<li>Routing between subnets inside of a local VPC</li>
-<li>Routing between multiple VPCs (VPC Peering)</li>
-<li>Routing to the public internet (0.0.0.0/0)</li>
-<li>Routing via VPN connection to an on-premise network</li>
-</ul>
-<p><a href=# rel>Click here to read more!</a></p>
-</div><div class=post-footer id=post-footer>
-<div class=post-info>
-<div class=post-info-line>
-<div class=post-info-mod>
-<span>Updated on 2015-05-19</span>
-</div>
-<div class=post-info-license></div>
-</div>
-<div class=post-info-line>
-<div class=post-info-md></div>
-<div class=post-info-share>
-<span></span>
-</div>
-</div>
-</div>
-<div class=post-info-more>
-<section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/aws/>aws</a>,&nbsp;<a href=/tags/tutorial/>tutorial</a></section>
-<section>
-<span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span>
-</section>
-</div>
-<div class=post-nav><a href=/posts/2015-05-19-twenty-five/ class=prev rel=prev title="Twenty-Five - 24 Things I Did At 24"><i class="fas fa-angle-left fa-fw"></i>Twenty-Five - 24 Things I Did At 24</a>
-<a href=/posts/2016-12-04-2016-aws-reinvent-recap/ class=next rel=next title="2016 AWS re:Invent Recap">2016 AWS re:Invent Recap<i class="fas fa-angle-right fa-fw"></i></a></div>
-</div>
-</article></div>
-</main><footer class=footer>
-<div class=footer-container><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2022</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank></a></span></div>
-</div>
-</footer></div>
-<div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top">
-<i class="fas fa-arrow-up fa-fw"></i>
-</a><a href=# id=view-comments class=fixed-button title="View Comments">
-<i class="fas fa-comment fa-fw"></i>
-</a>
-</div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},search:{highlightTag:null,maxResultLength:null,noResultsFound:"No results found",snippetLength:null}}</script><script type=text/javascript src=/js/theme.min.js></script></body>
-</html>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-desktop title=Search><i class="fas fa-search fa-fw"></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-desktop title=Clear><i class="fas fa-times-circle fa-fw"></i>
+</a><span class="search-button search-loading" id=search-loading-desktop><i class="fas fa-spinner fa-fw fa-spin"></i>
+</span></span><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme"><i class="fas fa-adjust fa-fw"></i></a></div></div></div></header><header class=mobile id=header-mobile><div class=header-container><div class=header-wrapper><div class=header-title><a href=/ title="Matt Adorjan">Matt Adorjan</a></div><div class=menu-toggle id=menu-toggle-mobile><span></span><span></span><span></span></div></div><div class=menu id=menu-mobile><div class=search-wrapper><div class="search mobile" id=search-mobile><input type=text placeholder="Search titles or contents..." id=search-input-mobile>
+<a href=javascript:void(0); class="search-button search-toggle" id=search-toggle-mobile title=Search><i class="fas fa-search fa-fw"></i>
+</a><a href=javascript:void(0); class="search-button search-clear" id=search-clear-mobile title=Clear><i class="fas fa-times-circle fa-fw"></i>
+</a><span class="search-button search-loading" id=search-loading-mobile><i class="fas fa-spinner fa-fw fa-spin"></i></span></div><a href=javascript:void(0); class=search-cancel id=search-cancel-mobile>Cancel</a></div><a class=menu-item href=/about/ title>About Me</a><a class=menu-item href=/posts/ title>Posts</a><a class=menu-item href=/tags/ title>Tags</a><a class=menu-item href=/photography/ title>Photography</a><a href=javascript:void(0); class="menu-item theme-switch" title="Switch Theme">
+<i class="fas fa-adjust fa-fw"></i></a></div></div></header><div class="search-dropdown desktop"><div id=search-dropdown-desktop></div></div><div class="search-dropdown mobile"><div id=search-dropdown-mobile></div></div><main class=main><div class=container><div class=toc id=toc-auto><h2 class=toc-title>Contents</h2><div class=toc-content id=toc-content-auto></div></div><article class="page single"><h1 class="single-title animated flipInX">AWS Routing 101</h1><div class=post-meta><div class=post-meta-line><span class=post-author><a href=/ title=Author rel=author class=author><i class="fas fa-user-circle fa-fw"></i>Matt Adorjan</a></span></div><div class=post-meta-line><i class="far fa-calendar-alt fa-fw"></i>&nbsp;<time datetime=2015-05-19>2015-05-19</time>&nbsp;<i class="fas fa-pencil-alt fa-fw"></i>&nbsp;109 words&nbsp;
+<i class="far fa-clock fa-fw"></i>&nbsp;One minute&nbsp;</div></div><div class="details toc" id=toc-static kept><div class="details-summary toc-title"><span>Contents</span>
+<span><i class="details-icon fas fa-angle-right"></i></span></div><div class="details-content toc-content" id=toc-content-static><nav id=TableOfContents><ul><li><a href=#introduction>Introduction</a></li></ul></nav></div></div><div class=content id=content><h2 id=introduction>Introduction</h2><p>AWS makes routing simple by abstracting the complex configuration required when configuring hardware routers, and only requiring users of the platform to manage simple routing tables with a few fields. AWS’ underlying infrastructure handles the rest. That being said, there are still several different options for routing which need to be considered and then configured, based on the size and complexity of your AWS environment.</p><p>This post will cover the following topics:</p><ul><li>Route Table Basics</li><li>Routing between subnets inside of a local VPC</li><li>Routing between multiple VPCs (VPC Peering)</li><li>Routing to the public internet (0.0.0.0/0)</li><li>Routing via VPN connection to an on-premise network</li></ul><p><a href=# rel>Click here to read more!</a></p></div><div class=post-footer id=post-footer><div class=post-info><div class=post-info-line><div class=post-info-mod><span>Updated on 2015-05-19</span></div><div class=post-info-license></div></div><div class=post-info-line><div class=post-info-md></div><div class=post-info-share><span></span></div></div></div><div class=post-info-more><section class=post-tags><i class="fas fa-tags fa-fw"></i>&nbsp;<a href=/tags/aws/>Aws</a>,&nbsp;<a href=/tags/tutorial/>Tutorial</a></section><section><span><a href=javascript:void(0); onclick=window.history.back()>Back</a></span>&nbsp;|&nbsp;<span><a href=/>Home</a></span></section></div><div class=post-nav><a href=/posts/2015-05-19-twenty-five/ class=prev rel=prev title="Twenty-Five - 24 Things I Did At 24"><i class="fas fa-angle-left fa-fw"></i>Twenty-Five - 24 Things I Did At 24</a>
+<a href=/posts/2016-12-04-2016-aws-reinvent-recap/ class=next rel=next title="2016 AWS re:Invent Recap">2016 AWS re:Invent Recap<i class="fas fa-angle-right fa-fw"></i></a></div></div></article></div></main><footer class=footer><div class=footer-container><div class=footer-line><i class="far fa-copyright fa-fw"></i><span itemprop=copyrightYear>2024</span><span class=author itemprop=copyrightHolder>&nbsp;<a href=/ target=_blank></a></span></div></div></footer></div><div id=fixed-buttons><a href=# id=back-to-top class=fixed-button title="Back to Top"><i class="fas fa-arrow-up fa-fw"></i>
+</a><a href=# id=view-comments class=fixed-button title="View Comments"><i class="fas fa-comment fa-fw"></i></a></div><script type=text/javascript src=/lib/smooth-scroll/smooth-scroll.min.js></script><script type=text/javascript src=/lib/autocomplete/autocomplete.min.js></script><script type=text/javascript src=/lib/lazysizes/lazysizes.min.js></script><script type=text/javascript src=/lib/clipboard/clipboard.min.js></script><script type=text/javascript>window.config={code:{copyTitle:"Copy to clipboard",maxShownLines:10},comment:{},search:{highlightTag:null,maxResultLength:null,noResultsFound:"No results found",snippetLength:null}}</script><script type=text/javascript src=/js/theme.min.js></script></body></html>
