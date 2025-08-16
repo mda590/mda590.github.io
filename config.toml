@@ -24,10 +24,10 @@ theme = "loveit"
       paginate = 4
 
   [params.social]
-    Twitter = "mda590"
+    Twitter = "mattadorjan"
     GitHub = "mda590"
     LinkedIn = "mattadorjan"
-    Instagram = "mda590"
+    Instagram = "mattadorjan"
     Medium = "mda590"
     Devto = "mattadorjan"
     Email = "matt@ma.dev"
